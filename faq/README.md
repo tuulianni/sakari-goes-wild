@@ -1,7 +1,7 @@
 # How to contribute
 - Create a fork of this repository to your own github account
-![01_guide.png]
-![02_guide.png]
+![01_guide.png](./01_guide.png)
+![02_guide.png](./02_guide.png)
 - Clone the repo to your computer in a location of your choise
 ```bash
 git clone git@github:<user>/sakari-goes-wild
@@ -19,4 +19,13 @@ git checkout -b new_feature
 ```
 - Code, add, commit and push as always
 - Once you are ready to create a PR to the tuulianni/sakari-goes-wild repo
--
+	- Make sure your new_feature branch has the latest updates from the upstream
+```bash
+# While the new_feature branch is checked out
+git fetch upstream
+git merge upstream/main
+```
+	- And create the pull request in github
+![03_guide.png](./03_guide.png)
+![04_guide.png](./04_guide.png)
+
