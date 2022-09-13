@@ -34,7 +34,7 @@ git checkout -b new_feature
 git fetch upstream
 git merge upstream/main
 ```
-	- And create the pull request in github
+- Create the pull request in github
 ![03_guide.png](./03_guide.png)
 ![04_guide.png](./04_guide.png)
 
