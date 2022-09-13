@@ -27,14 +27,20 @@ git checkout new_feature
 git checkout -b new_feature
 ```
 - Code, add, commit and push as always
-- Once you are ready to create a PR to the tuulianni/sakari-goes-wild repo
+- Once you are ready to create a pull request to the tuulianni/sakari-goes-wild repo
 	- Make sure your new_feature branch has the latest updates from the upstream
 ```bash
 # While the new_feature branch is checked out
 git fetch upstream
 git merge upstream/main
 ```
-	- And create the pull request in github
+	- And create the PR in github
 ![03_guide.png](./03_guide.png)
 ![04_guide.png](./04_guide.png)
+---
 
+# How to merge PRs
+- Check the open PRs
+![05_guide.png](./05_guide.png)
+- Comment if needed and when everything is ready merge
+![06_guide.png](./06_guide.png)
