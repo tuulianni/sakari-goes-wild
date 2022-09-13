@@ -10,6 +10,15 @@ git clone git@github:<user>/sakari-goes-wild
 ```bash
 git remote add upstream https://github.com/tuulianni/sakari-goes-wild.git
 ```
+- Fetch the upstream repo
+```bash
+git fetch upstream
+```
+- Keep your main branch up to date with the original repos main branch
+```bash
+git pull upstream main
+git push origin main
+```
 - Create a new branch for whatever feature you work for
 ```bash
 git branch new_feature
