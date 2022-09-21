@@ -4,7 +4,7 @@
 ![02_guide.png](./02_guide.png)
 - Clone the repo to your computer in a location of your choise
 ```bash
-git clone git@github:<user>/sakari-goes-wild
+git clone git@github.com:<user>/sakari-goes-wild
 ```
 - Add the upstream tuulianni/sakari-goes-wild
 ```bash
