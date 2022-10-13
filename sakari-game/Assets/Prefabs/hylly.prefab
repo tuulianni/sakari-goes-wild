@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4902968773731372328}
   - component: {fileID: 4902968773731372333}
   - component: {fileID: 4902968773731372331}
-  - component: {fileID: -155140934313985924}
+  - component: {fileID: 7314085586386630241}
   m_Layer: 0
   m_Name: hylly
   m_TagString: walls
@@ -107,8 +107,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!60 &-155140934313985924
-PolygonCollider2D:
+--- !u!61 &7314085586386630241
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,12 +130,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.05758709, y: 0.39851055}
-      - {x: -0.4115387, y: 0.3604249}
-      - {x: -0.3911968, y: 0.009649674}
-      - {x: -0.38102558, y: -0.34021252}
-      - {x: -0.032333657, y: -0.41181377}
-      - {x: 0.40136778, y: -0.3705311}
-      - {x: 0.37085497, y: 0.3604248}
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.75}
+  m_EdgeRadius: 0
