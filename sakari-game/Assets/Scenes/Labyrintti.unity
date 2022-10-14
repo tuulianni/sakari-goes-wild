@@ -468,9 +468,11 @@ GameObject:
   m_Component:
   - component: {fileID: 133608622}
   - component: {fileID: 133608621}
+  - component: {fileID: 133608625}
   - component: {fileID: 133608620}
   - component: {fileID: 133608624}
   - component: {fileID: 133608623}
+  - component: {fileID: 133608626}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -490,10 +492,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f87545cdc779544b895149c14d29e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   score: 0
+  sweaters: 8
   keyAmount: {fileID: 26525688}
-  stairs: {fileID: 1706034171}
+  winner: {fileID: 1706034173}
+  stairs: {fileID: 2104434733}
 --- !u!212 &133608621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -585,7 +588,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.41, y: 1.18}
+  m_Size: {x: 0.65, y: 0.9}
   m_EdgeRadius: 0
 --- !u!50 &133608624
 Rigidbody2D:
@@ -608,6 +611,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &133608625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133608619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bf3592c82f2e84eae90703339acb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 3
+  movement: {x: 0, y: 0}
+  rigidbody: {fileID: 0}
+  anim: {fileID: 0}
+  hf: 0
+  vf: 0
+--- !u!95 &133608626
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133608619}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d1bbcf59c8c4f349bdb7c5fa1e3aa52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &140261939
 PrefabInstance:
   m_ObjectHideFlags: 0
