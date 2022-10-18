@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class Player : MonoBehaviour
+public class LabyScripts : MonoBehaviour
 {
 		//koska tä on public niin sitä voi muokata unityssä
 		//public float speed = 5.0f;
@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
 						keyAmount.text = "Pisteitä: " + score;
 					}
 					else {
-						keyAmount.text = "Voitit!";
+						keyAmount.text = "---->";
 					}
 
 				}

@@ -468,8 +468,8 @@ GameObject:
   m_Component:
   - component: {fileID: 133608622}
   - component: {fileID: 133608621}
+  - component: {fileID: 133608628}
   - component: {fileID: 133608627}
-  - component: {fileID: 133608620}
   - component: {fileID: 133608624}
   - component: {fileID: 133608623}
   - component: {fileID: 133608626}
@@ -480,23 +480,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &133608620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133608619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f87545cdc779544b895149c14d29e70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  sweaters: 8
-  keyAmount: {fileID: 26525688}
-  winner: {fileID: 1706034173}
-  stairs: {fileID: 2104434733}
 --- !u!212 &133608621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -649,6 +632,23 @@ MonoBehaviour:
   anim: {fileID: 0}
   hf: 0
   vf: 0
+--- !u!114 &133608628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133608619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f87545cdc779544b895149c14d29e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  sweaters: 8
+  keyAmount: {fileID: 26525688}
+  winner: {fileID: 1706034173}
+  stairs: {fileID: 2104434733}
 --- !u!1001 &140261939
 PrefabInstance:
   m_ObjectHideFlags: 0
