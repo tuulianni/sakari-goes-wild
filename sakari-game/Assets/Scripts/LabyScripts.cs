@@ -53,7 +53,7 @@ public class LabyScripts : MonoBehaviour
 						keyAmount.text = "Pisteitä: " + score;
 					}
 					else {
-						keyAmount.text = "---->";
+						keyAmount.text = "Huh! Äkkiä turvaan ylös";
 					}
 
 				}
@@ -61,8 +61,8 @@ public class LabyScripts : MonoBehaviour
 			if(collision.gameObject.tag == "stairs") {
 
 				//winner = FindObjectOfType<TextMeshProUGUI>();
-				winner.text = "HIHI PELASTIT VILLAPAIDAT";
-				//ChangeLvl("back-to-Sakarihouse");
+				//winner.text = "HIHI PELASTIT VILLAPAIDAT";
+				SceneManager.LoadScene("back-to-Sakarihouse");
 				
 			}
 
@@ -75,9 +75,5 @@ public class LabyScripts : MonoBehaviour
 				}
 
 		}
-
-//		public void ChangeLvl(string lvlName) {
-//			SceneManager.LoadSceneAsync(lvlName);
-//}
 
 }

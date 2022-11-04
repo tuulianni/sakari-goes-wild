@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-		public void LoadGame()
+	public int levelId;
+
+		public void LoadGame(int levelId)
 		{
 			//load the game scene
-			SceneManager.LoadScene(1); //0 = Main Menu 1 = OverWorld
+			SceneManager.LoadScene(levelId); //0 = Main Menu 1 = OverWorld
 		}
 
 }
