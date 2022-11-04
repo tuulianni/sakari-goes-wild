@@ -27,30 +27,6 @@ public class LabyScripts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-				//nuolinäppäimet
-     /*   if(Input.GetKey(KeyCode.LeftArrow)) {
-						
-					transform.Translate(-speed * Time.deltaTime, 0, 0);
-
-				}
-
-				if(Input.GetKey(KeyCode.RightArrow)) {
-
-					transform.Translate(speed * Time.deltaTime, 0, 0);
-					
-				}
-
-				if(Input.GetKey(KeyCode.UpArrow)) {
-
-					transform.Translate(0, speed * Time.deltaTime, 0);
-					
-				}
-
-				if(Input.GetKey(KeyCode.DownArrow)) {
-
-					transform.Translate(0, -speed * Time.deltaTime, 0);
-					
-				}*/
 
 				if (score == sweaters) {
 
@@ -77,7 +53,7 @@ public class LabyScripts : MonoBehaviour
 						keyAmount.text = "Pisteitä: " + score;
 					}
 					else {
-						keyAmount.text = "---->";
+						keyAmount.text = "Huh! Äkkiä turvaan ylös";
 					}
 
 				}
@@ -85,7 +61,8 @@ public class LabyScripts : MonoBehaviour
 			if(collision.gameObject.tag == "stairs") {
 
 				//winner = FindObjectOfType<TextMeshProUGUI>();
-				winner.text = "HIHI PELASTIT VILLAPAIDAT";
+				//winner.text = "HIHI PELASTIT VILLAPAIDAT";
+				SceneManager.LoadScene("back-to-Sakarihouse");
 				
 			}
 
@@ -97,34 +74,6 @@ public class LabyScripts : MonoBehaviour
 					
 				}
 
-				//jos osut seinään
-				//lisää seinälle ja pelaajalle rigibody2D ja boxcollider2D ja laita rigin gravi 0 ja infosta x,y ja z freeze. Pelaajalla pelkkä z!
-				//tässä pomppaa seinästä
-				/*if(collision.gameObject.tag == "walls") {
-
-					if(Input.GetKey(KeyCode.LeftArrow)) {
-		
-						transform.Translate(speed * Time.deltaTime, 0, 0);
-
-					}
-
-					if(Input.GetKey(KeyCode.RightArrow)) {
-
-						transform.Translate(-speed * Time.deltaTime, 0, 0);
-					
-					}
-
-					if(Input.GetKey(KeyCode.UpArrow)) {
-
-						transform.Translate(0, -speed * Time.deltaTime, 0);
-						
-					}
-
-					if(Input.GetKey(KeyCode.DownArrow)) {
-
-						transform.Translate(0, speed * Time.deltaTime, 0);
-						
-					}
-				}*/
 		}
+
 }
