@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 8052892299936362726}
   - component: {fileID: 8052892299936362729}
   - component: {fileID: 8052892299936362724}
+  - component: {fileID: 7759407275140562251}
   - component: {fileID: 8052892299936362727}
+  - component: {fileID: 1748402095853949867}
   - component: {fileID: 8052892299936362725}
   m_Layer: 0
   m_Name: TempSakari
@@ -108,6 +110,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7759407275140562251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8052892299936362728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc7b629ffd1f934694e9f79d1e9a702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8052892299936362727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +140,18 @@ MonoBehaviour:
   anim: {fileID: 0}
   hf: 0
   vf: 0
+--- !u!114 &1748402095853949867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8052892299936362728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1ade8186cf58543bdc53c66f22676d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &8052892299936362725
 Animator:
   serializedVersion: 4

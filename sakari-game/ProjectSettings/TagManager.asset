@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - walls
+  - enemies
+  - stairs
+  - sweaters
+  - downstairs
+  - outdoor
+  - SakariHouse
+  - EkiHouse
+  - Hello
+  - PekkaHouse
   layers:
   - Default
   - TransparentFX

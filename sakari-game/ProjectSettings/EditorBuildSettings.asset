@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HouseSakari.unity
     guid: 4ed4375221f202f419f6cec5d4ebd89f
+  - enabled: 1
+    path: Assets/Scenes/HouseEki.unity
+    guid: a2d7aebce9c9214478133260f92b026a
   m_configObjects: {}
