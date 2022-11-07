@@ -16,5 +16,6 @@ public class BackToSakariHouse : MonoBehaviour
     {
         SceneManager.LoadScene("HouseSakari");
     }
+		
 
 }
