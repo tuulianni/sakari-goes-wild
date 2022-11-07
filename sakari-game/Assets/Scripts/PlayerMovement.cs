@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
+
     }
 
     // FixedUpdate is called a fixed 50 times per second
@@ -57,4 +59,5 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("Speed", vf);
         
     }
+
 }
