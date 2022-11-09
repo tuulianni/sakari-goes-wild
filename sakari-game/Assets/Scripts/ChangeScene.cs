@@ -15,13 +15,13 @@ public class ChangeScene : MonoBehaviour
 			} 
 			else if(collision.gameObject.tag == "outdoor") {
 
-				SceneManager.LoadScene("Overworld");
+				SceneManager.LoadScene("back-to-ow");
 				
 			} 
 
 			else if(collision.gameObject.tag == "SakariHouse") {
 
-				SceneManager.LoadScene("HouseSakari");
+				SceneManager.LoadScene("to-SakaHous");
 				
 			} 
 			else if(collision.gameObject.tag == "EkiHouse") {
