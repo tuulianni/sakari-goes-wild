@@ -8,7 +8,7 @@ public class BackToOverworld : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-				Invoke("Action", 10.0f);
+				Invoke("Action", 8.0f);
     }
 
 		public void Action()
