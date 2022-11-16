@@ -297,7 +297,7 @@ TextureImporter:
       213: 21300194
     second: Dog_Brown_97
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -318,6 +318,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -356,6 +357,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -395,6 +397,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2476,6 +2490,105 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Dog_Brown_23: 21300046
+      Dog_Brown_55: 21300110
+      Dog_Brown_91: 21300182
+      Dog_Brown_81: 21300162
+      Dog_Brown_33: 21300066
+      Dog_Brown_26: 21300052
+      Dog_Brown_4: 21300008
+      Dog_Brown_22: 21300044
+      Dog_Brown_51: 21300102
+      Dog_Brown_9: 21300018
+      Dog_Brown_70: 21300140
+      Dog_Brown_57: 21300114
+      Dog_Brown_13: 21300026
+      Dog_Brown_74: 21300148
+      Dog_Brown_73: 21300146
+      Dog_Brown_0: 21300000
+      Dog_Brown_34: 21300068
+      Dog_Brown_50: 21300100
+      Dog_Brown_21: 21300042
+      Dog_Brown_25: 21300050
+      Dog_Brown_16: 21300032
+      Dog_Brown_42: 21300084
+      Dog_Brown_87: 21300174
+      Dog_Brown_62: 21300124
+      Dog_Brown_94: 21300188
+      Dog_Brown_11: 21300022
+      Dog_Brown_10: 21300020
+      Dog_Brown_48: 21300096
+      Dog_Brown_85: 21300170
+      Dog_Brown_68: 21300136
+      Dog_Brown_52: 21300104
+      Dog_Brown_83: 21300166
+      Dog_Brown_84: 21300168
+      Dog_Brown_43: 21300086
+      Dog_Brown_92: 21300184
+      Dog_Brown_2: 21300004
+      Dog_Brown_71: 21300142
+      Dog_Brown_15: 21300030
+      Dog_Brown_24: 21300048
+      Dog_Brown_49: 21300098
+      Dog_Brown_69: 21300138
+      Dog_Brown_30: 21300060
+      Dog_Brown_54: 21300108
+      Dog_Brown_38: 21300076
+      Dog_Brown_80: 21300160
+      Dog_Brown_27: 21300054
+      Dog_Brown_1: 21300002
+      Dog_Brown_60: 21300120
+      Dog_Brown_61: 21300122
+      Dog_Brown_28: 21300056
+      Dog_Brown_78: 21300156
+      Dog_Brown_6: 21300012
+      Dog_Brown_59: 21300118
+      Dog_Brown_95: 21300190
+      Dog_Brown_56: 21300112
+      Dog_Brown_89: 21300178
+      Dog_Brown_45: 21300090
+      Dog_Brown_12: 21300024
+      Dog_Brown_40: 21300080
+      Dog_Brown_77: 21300154
+      Dog_Brown_93: 21300186
+      Dog_Brown_20: 21300040
+      Dog_Brown_18: 21300036
+      Dog_Brown_7: 21300014
+      Dog_Brown_32: 21300064
+      Dog_Brown_65: 21300130
+      Dog_Brown_67: 21300134
+      Dog_Brown_96: 21300192
+      Dog_Brown_64: 21300128
+      Dog_Brown_36: 21300072
+      Dog_Brown_90: 21300180
+      Dog_Brown_17: 21300034
+      Dog_Brown_41: 21300082
+      Dog_Brown_39: 21300078
+      Dog_Brown_44: 21300088
+      Dog_Brown_76: 21300152
+      Dog_Brown_63: 21300126
+      Dog_Brown_19: 21300038
+      Dog_Brown_86: 21300172
+      Dog_Brown_8: 21300016
+      Dog_Brown_72: 21300144
+      Dog_Brown_79: 21300158
+      Dog_Brown_29: 21300058
+      Dog_Brown_88: 21300176
+      Dog_Brown_58: 21300116
+      Dog_Brown_53: 21300106
+      Dog_Brown_46: 21300092
+      Dog_Brown_5: 21300010
+      Dog_Brown_47: 21300094
+      Dog_Brown_31: 21300062
+      Dog_Brown_37: 21300074
+      Dog_Brown_35: 21300070
+      Dog_Brown_97: 21300194
+      Dog_Brown_66: 21300132
+      Dog_Brown_82: 21300164
+      Dog_Brown_75: 21300150
+      Dog_Brown_14: 21300028
+      Dog_Brown_3: 21300006
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
