@@ -21,7 +21,7 @@ public class SurnuPekka : MonoBehaviour
     {
       if(collision.gameObject.tag == "PekkaHouse") {
 
-				//hello.SetActive(true);
+				//	hello.SetActive(true);
 
 				StartCoroutine(waiter());
 
