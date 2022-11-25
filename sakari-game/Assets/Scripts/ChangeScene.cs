@@ -29,6 +29,12 @@ public class ChangeScene : MonoBehaviour
 				SceneManager.LoadScene("HouseEki");
 				
 			} 
+			else if(collision.gameObject.tag == "Rex") {
+
+				SceneManager.LoadScene("Rex");
+				
+			} 
+			
     }
 
 
