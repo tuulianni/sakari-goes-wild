@@ -5293,7 +5293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771357546008628044, guid: 7f9cd9f9492c6c4498a6a267d121038a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.32
+      value: -13.5
       objectReference: {fileID: 0}
     - target: {fileID: 771357546008628044, guid: 7f9cd9f9492c6c4498a6a267d121038a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5404,7 +5404,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Finish
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1984895861730561887, guid: f0941f95c3dc2c949ad68ca4bf3476d7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1984895861730561887, guid: f0941f95c3dc2c949ad68ca4bf3476d7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f0941f95c3dc2c949ad68ca4bf3476d7, type: 3}
 --- !u!1 &1017531257462589711 stripped
 GameObject:
@@ -5864,7 +5869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5869452134393469211, guid: c5379f902f4026747b7e97a1ddf5e6be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.1
+      value: -5.3
       objectReference: {fileID: 0}
     - target: {fileID: 5869452134393469211, guid: c5379f902f4026747b7e97a1ddf5e6be, type: 3}
       propertyPath: m_LocalPosition.y
