@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
     void PlayerMove(){
         //Controlls
         moveDirection = Input.GetAxis("Horizontal");
-        if(Input.GetButtonDown("Jump2") && MaxJumpCount > 0)
+        if(Input.GetButtonDown("Jump") && MaxJumpCount > 0)
         {
             //MaxJumpCount--;
             Jump();
