@@ -19,6 +19,6 @@ public class finish : MonoBehaviour
     void OnTriggerEnter2D(Collider2D player){
         
         
-        SceneManager.LoadScene("Overworld");
+        SceneManager.LoadScene("back-to-ow");
     }
 }
