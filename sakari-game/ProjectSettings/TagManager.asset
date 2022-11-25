@@ -29,6 +29,7 @@ TagManager:
   - Fence
   - Trigger
   - Rex
+  - conversation
   layers:
   - Default
   - TransparentFX

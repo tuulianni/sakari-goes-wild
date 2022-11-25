@@ -6,13 +6,14 @@ public class NpcTemplate : MonoBehaviour
 {
     public Transform player;
     float x;
-    float y;
+    float y;      
 
     void Start()
     {
         // Take the x and y coordinates of this object
         x = transform.position.x;
         y = transform.position.y;
+
     }
 
     void Update()
@@ -24,6 +25,7 @@ public class NpcTemplate : MonoBehaviour
         {
             // Here we want to spawn a new canvas with text boxes lj
             Debug.Log("Interact");
+
         }
     }
 }
