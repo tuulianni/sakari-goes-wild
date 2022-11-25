@@ -34,7 +34,7 @@ public class ChangeScene : MonoBehaviour
 				SceneManager.LoadScene("Rex");
 				
 			} 
-			else if(collision.gameObject.tag == "back-to-ow") {
+			else if(collision.gameObject.tag == "Finish") {
 
 				SceneManager.LoadScene("back-to-ow");
 				
