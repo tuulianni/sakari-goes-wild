@@ -28,6 +28,7 @@ TagManager:
   - Rock
   - Fence
   - Trigger
+  - Rex
   layers:
   - Default
   - TransparentFX

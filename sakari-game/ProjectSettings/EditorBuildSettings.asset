@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/to-SakaHous.unity
     guid: e5caf1dfd0b022e45b13928d346d04dd
+  - enabled: 1
+    path: Assets/Scenes/Instructors.unity
+    guid: b75975e65a5582b4486c53656ee4219a
+  - enabled: 1
+    path: Assets/Scenes/MGPlatformer.unity
+    guid: c0e889e92d4bf8943a49331118e2cd0e
+  - enabled: 1
+    path: Assets/Scenes/Rex.unity
+    guid: cec699bd9381a414f85c633d6b305d26
   m_configObjects: {}
