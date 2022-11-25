@@ -15,13 +15,13 @@ public class ChangeScene : MonoBehaviour
 			} 
 			else if(collision.gameObject.tag == "outdoor") {
 
-				SceneManager.LoadScene("back-to-ow");
+				SceneManager.LoadScene("Overworld");
 				
 			} 
 
 			else if(collision.gameObject.tag == "SakariHouse") {
 
-				SceneManager.LoadScene("to-SakaHous");
+				SceneManager.LoadScene("HouseSakari");
 				
 			} 
 			else if(collision.gameObject.tag == "EkiHouse") {
@@ -29,6 +29,12 @@ public class ChangeScene : MonoBehaviour
 				SceneManager.LoadScene("HouseEki");
 				
 			} 
+			else if(collision.gameObject.tag == "Rex") {
+
+				SceneManager.LoadScene("Rex");
+				
+			} 
+			
     }
 
 

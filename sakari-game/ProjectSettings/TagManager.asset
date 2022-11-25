@@ -28,6 +28,8 @@ TagManager:
   - Rock
   - Fence
   - Trigger
+  - Rex
+  - conversation
   layers:
   - Default
   - TransparentFX
