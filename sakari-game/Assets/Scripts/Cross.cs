@@ -27,18 +27,16 @@ public class Cross : MonoBehaviour
         if (Input.GetButtonDown("Jump") && x + 1 > pPos.x && x - 1 < pPos.x && y + 1 > pPos.y && y - 1 < pPos.y)
         {
             // Here we want to spawn a new canvas with text boxes lj
-            Debug.Log("Interact");
+            Debug.Log("Jump pressed");
 
 						memorian.SetActive(true);
 
         }
-
-				
-				if (memorian.SetActive() == true) {
-					if (Input.GetButtonDown("Jump")) {
-						memorian.SetActive(false);
-					}
-				}
     }
+
+		public void Close() 
+		{
+			memorian.SetActive(false);
+		}
 }
 
