@@ -42,6 +42,10 @@ public class LabyScripts : MonoBehaviour
 			info.SetActive(false);
 		}
 
+		public void OpenInfo() {
+			info.SetActive(true);
+		}
+
 		//tämä on valmis luokka ja tätä tulee käyttää
 		private void OnCollisionEnter2D(Collision2D collision) {
 			
@@ -75,7 +79,7 @@ public class LabyScripts : MonoBehaviour
 				//palaa siis aina alkuun jos osuu viholliseen
 				if(collision.gameObject.tag == "enemies") {
 
-					SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+					SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
 					
 				}
 
