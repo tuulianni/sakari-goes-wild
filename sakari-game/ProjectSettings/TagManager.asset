@@ -30,6 +30,7 @@ TagManager:
   - Trigger
   - Rex
   - conversation
+  - risti
   layers:
   - Default
   - TransparentFX
