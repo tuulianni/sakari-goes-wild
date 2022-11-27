@@ -29,11 +29,11 @@ public class ChangeScene : MonoBehaviour
 				SceneManager.LoadScene("HouseEki");
 				
 			} 
-			else if(collision.gameObject.tag == "Rex") {
+			// else if(collision.gameObject.tag == "Rex") {
 
-				SceneManager.LoadScene("Rex");
+			// 	SceneManager.LoadScene("Rex");
 				
-			} 
+			// } 
 			else if(collision.gameObject.tag == "Finish") {
 
 				SceneManager.LoadScene("back-to-ow");
