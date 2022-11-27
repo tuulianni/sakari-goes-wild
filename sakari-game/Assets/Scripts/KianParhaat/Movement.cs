@@ -5,11 +5,14 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private float moveDirection;
-    public float moveSpeed = 10;
+    public float moveSpeed = 8;
     public float jumpForce = 1250;
     public bool isGrounded;
     private bool facingRight = true;
     public int MaxJumpCount = 2;
+    float speed = 0f;
+
+    public Animator animator;
     
     void Update(){
     
@@ -19,6 +22,8 @@ public class Movement : MonoBehaviour
     void PlayerMove(){
         //Controlls
         moveDirection = Input.GetAxis("Horizontal");
+        speed = moveDirection * moveSpeed;
+        animator.SetFloat("Speed", Mathf.Abs(speed));
         if(Input.GetButtonDown("Jump") && MaxJumpCount > 0)
         {
             //MaxJumpCount--;
