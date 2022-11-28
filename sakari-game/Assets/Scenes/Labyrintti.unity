@@ -811,7 +811,7 @@ MonoBehaviour:
   stairs: {fileID: 2104434733}
   info: {fileID: 1847006934}
   EnemySound: {fileID: 1168661809}
-  SweaterSound: {fileID: 1168661809}
+  SweaterSound: {fileID: 1001794866}
   StairSound: {fileID: 447573319}
 --- !u!1001 &140261939
 PrefabInstance:
@@ -2442,14 +2442,14 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: eafe3e69bc8e07d4f83bf90a1ff67a22, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 200
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5348,14 +5348,14 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c0382a2db57eb8b439752e058404969b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 200
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

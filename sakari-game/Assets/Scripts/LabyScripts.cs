@@ -98,7 +98,7 @@ public class LabyScripts : MonoBehaviour
 
 		IEnumerator waiter() 
 		{
-			yield return new WaitForSeconds(2);
+			yield return new WaitForSeconds(0.5f);
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
 		}
 
