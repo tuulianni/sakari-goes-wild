@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/back-to-ow.unity
     guid: d10e9850abb4a8b499798f15b94278db
   - enabled: 1
+    path: Assets/Scenes/Rex.unity
+    guid: cec699bd9381a414f85c633d6b305d26
+  - enabled: 1
     path: Assets/Scenes/to-SakaHous.unity
     guid: e5caf1dfd0b022e45b13928d346d04dd
   - enabled: 1

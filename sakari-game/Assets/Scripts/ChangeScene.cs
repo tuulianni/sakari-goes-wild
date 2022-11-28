@@ -34,7 +34,11 @@ public class ChangeScene : MonoBehaviour
 				SceneManager.LoadScene("Rex");
 				
 			} 
-			
+			else if(collision.gameObject.tag == "Finish") {
+
+				SceneManager.LoadScene("back-to-ow");
+				
+			}
     }
 
 
