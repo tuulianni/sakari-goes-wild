@@ -79,6 +79,7 @@ public class LabyScripts : MonoBehaviour
 
 				//winner = FindObjectOfType<TextMeshProUGUI>();
 				//winner.text = "HIHI PELASTIT VILLAPAIDAT";
+				GameManager.SweaterCounter();
 				SceneManager.LoadScene("back-to-Sakarihouse");
 				
 			}
