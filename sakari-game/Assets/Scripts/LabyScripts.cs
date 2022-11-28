@@ -20,7 +20,9 @@ public class LabyScripts : MonoBehaviour
 		public GameObject stairs;
 		public GameObject info;
 
-		public AudioSource audioPlayer;
+		public AudioSource EnemySound;
+		public AudioSource SweaterSound;
+		public AudioSource StairSound;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class LabyScripts : MonoBehaviour
 
 				if (score == sweaters) {
 
+					StairSound.Play();
 					stairs.SetActive(true);
 				}
 				else {
@@ -57,6 +60,8 @@ public class LabyScripts : MonoBehaviour
 				if(collision.gameObject.tag == "sweaters") {
 
 					Destroy(collision.gameObject);
+
+					SweaterSound.Play();
 
 					score++;
 
@@ -82,7 +87,7 @@ public class LabyScripts : MonoBehaviour
 				//palaa siis aina alkuun jos osuu viholliseen
 				if(collision.gameObject.tag == "enemies") {
 
-					audioPlayer.Play();
+					EnemySound.Play();
 
 					StartCoroutine(waiter());
 					//SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
