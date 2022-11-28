@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -18,6 +19,8 @@ public class LabyScripts : MonoBehaviour
 	
 		public GameObject stairs;
 		public GameObject info;
+
+		public AudioSource audioPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -79,10 +82,19 @@ public class LabyScripts : MonoBehaviour
 				//palaa siis aina alkuun jos osuu viholliseen
 				if(collision.gameObject.tag == "enemies") {
 
-					SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
+					audioPlayer.Play();
+
+					StartCoroutine(waiter());
+					//SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
 					
 				}
 
+		}
+
+		IEnumerator waiter() 
+		{
+			yield return new WaitForSeconds(2);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
 		}
 
 }
