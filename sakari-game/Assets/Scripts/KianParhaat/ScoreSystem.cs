@@ -34,6 +34,10 @@ public class ScoreSystem : MonoBehaviour
         Debug.Log("End of Level");
         CountScore();
         }
+        if(trig.gameObject.tag == "sweaters"){
+            playerScore += 10;
+            Destroy(trig.gameObject);
+        }
     }
 
     
