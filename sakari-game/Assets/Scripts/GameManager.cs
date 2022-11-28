@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int sweatersFound = 0;
+    public static int sweatersFound = 0;
     string[] SceneArr;
     // Start is called before the first frame update
     void Start()
@@ -18,4 +18,10 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+		public static void SweaterCounter() {
+
+			sweatersFound++;
+			Debug.Log("SweatersFound: " + sweatersFound);
+		}
 }
