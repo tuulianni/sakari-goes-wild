@@ -56,7 +56,8 @@ public class ScoreSystem : MonoBehaviour
         // }
         
         if(trig.gameObject.tag == "sweaters"){
-            
+
+						GameManager.SweaterCounter();            
             playerScore += 10;
             Destroy(trig.gameObject);
             

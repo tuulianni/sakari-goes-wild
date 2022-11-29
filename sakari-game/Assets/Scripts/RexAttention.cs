@@ -24,7 +24,7 @@ public class RexAttention : MonoBehaviour
 
 		IEnumerator waiter() 
 		 {
-		 	yield return new WaitForSeconds(4);
-		 	SceneManager.LoadScene("Rex");
+		 	yield return new WaitForSeconds(1);
+		 	SceneManager.LoadScene("RexInfo");
 		 }
 }
