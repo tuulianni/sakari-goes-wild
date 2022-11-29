@@ -529,10 +529,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5595846175644865149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de93fe3ddfa805f4c9b418f7a0e024dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d1ade8186cf58543bdc53c66f22676d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelId: 0
+  sceneName: 
+  delayTime: 5
 --- !u!1 &5595846176199002785
 GameObject:
   m_ObjectHideFlags: 0
