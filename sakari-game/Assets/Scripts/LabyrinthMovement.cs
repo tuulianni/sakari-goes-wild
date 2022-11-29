@@ -28,6 +28,13 @@ public class LabyrinthMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // We use "Jump" as the interact key in the top down world. No idea if this is actually the correct place for this...
+        // Probably need to put this sort of check to the prefabs we want to be able to interact with
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    Debug.Log("Interact");
+        //}
+
         movement.x = Input.GetAxisRaw("Horizontal"); // -1 when moving left, 1 when moving right
         movement.y = Input.GetAxisRaw("Vertical"); // -1 when moving down, 1 when moving up
         movement = movement.normalized; // Prevent movement speed increasing when moving diagonally
