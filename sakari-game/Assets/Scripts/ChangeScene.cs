@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class ChangeScene : MonoBehaviour
 {
+	
+	public float delayTime = 5f;
     // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D collision) 
     {
@@ -36,10 +40,17 @@ public class ChangeScene : MonoBehaviour
 			// } 
 			else if(collision.gameObject.tag == "Finish") {
 
-				SceneManager.LoadScene("back-to-ow");
+				Invoke("DelayedAction", delayTime);
+				
 				
 			}
+
+
     }
+
+	void DelayedAction(){
+		SceneManager.LoadScene("back-to-ow");
+	}
 
 
 }
