@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-	public int levelId;
+	public string levelName;
 
 	public AudioSource soundPlayer;
 
@@ -13,11 +13,11 @@ public class MainMenu : MonoBehaviour
 			soundPlayer.Play();
 		}
 
-		public void LoadGame(int levelId)
+		public void LoadGame(string levelName)
 		{
 			//load the game scene
 
-			SceneManager.LoadScene(levelId); //0 = Main Menu 1 = OverWorld
+			SceneManager.LoadScene(levelName); //0 = Main Menu 1 = OverWorld
 		}
 
 }

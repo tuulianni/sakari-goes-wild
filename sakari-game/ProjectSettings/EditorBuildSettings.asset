@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Swagge..unity
+    guid: 2861efa34039770498ed329709171d5b
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: e1c9b5d98415ac34bb493d3c961dcb63
   - enabled: 1
