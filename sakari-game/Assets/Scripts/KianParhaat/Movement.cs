@@ -12,17 +12,11 @@ public class Movement : MonoBehaviour
     public int MaxJumpCount = 2;
     float speed = 0f;
 
-    AudioSource jumpsound;
-
     public Animator animator;
     
     void Update(){
     
         PlayerMove();
-    }
-
-    void Start(){
-        jumpsound = GetComponent<AudioSource>();
     }
 
     void PlayerMove(){
@@ -49,8 +43,6 @@ public class Movement : MonoBehaviour
     }
 
     void Jump(){
-
-        jumpsound.Play();
         GetComponent<Rigidbody2D>().AddForce (Vector2.up * jumpForce);
         isGrounded = false;
         MaxJumpCount--;
@@ -69,7 +61,6 @@ public class Movement : MonoBehaviour
             isGrounded = true;
             MaxJumpCount = 2;
         }
-        
     }
 
 
