@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public int maxHealth = 10;
     public bool hasDied;
+
+    [SerializeField] public AudioSource playerDeathSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,7 @@ public class PlayerHealth : MonoBehaviour
 
         health -= amount;
         if(health <= 0){
+            
             hasDied = true;
             Die();
         }
@@ -39,7 +42,11 @@ public class PlayerHealth : MonoBehaviour
     }
 
     IEnumerator Die () {
-       SceneManager.LoadScene("Rex");
+
+    
+       playerDeathSound.Play();
+        
+        SceneManager.LoadScene("DeathScene");
         yield return null;
     }
 }
