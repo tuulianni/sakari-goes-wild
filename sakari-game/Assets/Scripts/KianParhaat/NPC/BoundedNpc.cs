@@ -11,12 +11,15 @@ public class BoundedNpc : MonoBehaviour
     public float speed;
     private Rigidbody2D myRigidBody;
     public Collider2D bounds;
-
+    public Animator animator;
+    public AnimatorOverrideController up;
+    public AnimatorOverrideController side;
  
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         myTransform = GetComponent<Transform>();
         myRigidBody = GetComponent<Rigidbody2D>();
         ChangeDirection();
@@ -55,6 +58,7 @@ public class BoundedNpc : MonoBehaviour
             break;
             case 1:
             //walking up
+            animator.runtimeAnimatorController = up;
             directionVector = Vector3.up;
             break;
             case 2:
