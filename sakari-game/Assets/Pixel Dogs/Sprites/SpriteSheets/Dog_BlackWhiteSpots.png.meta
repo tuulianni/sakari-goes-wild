@@ -297,7 +297,7 @@ TextureImporter:
       213: 21300194
     second: Dog_BlackWhiteSpots_97
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -318,6 +318,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -356,6 +357,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -395,6 +397,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2476,6 +2490,105 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Dog_BlackWhiteSpots_0: 21300000
+      Dog_BlackWhiteSpots_97: 21300194
+      Dog_BlackWhiteSpots_71: 21300142
+      Dog_BlackWhiteSpots_53: 21300106
+      Dog_BlackWhiteSpots_1: 21300002
+      Dog_BlackWhiteSpots_14: 21300028
+      Dog_BlackWhiteSpots_85: 21300170
+      Dog_BlackWhiteSpots_57: 21300114
+      Dog_BlackWhiteSpots_70: 21300140
+      Dog_BlackWhiteSpots_62: 21300124
+      Dog_BlackWhiteSpots_51: 21300102
+      Dog_BlackWhiteSpots_16: 21300032
+      Dog_BlackWhiteSpots_77: 21300154
+      Dog_BlackWhiteSpots_15: 21300030
+      Dog_BlackWhiteSpots_64: 21300128
+      Dog_BlackWhiteSpots_42: 21300084
+      Dog_BlackWhiteSpots_7: 21300014
+      Dog_BlackWhiteSpots_21: 21300042
+      Dog_BlackWhiteSpots_79: 21300158
+      Dog_BlackWhiteSpots_84: 21300168
+      Dog_BlackWhiteSpots_89: 21300178
+      Dog_BlackWhiteSpots_12: 21300024
+      Dog_BlackWhiteSpots_38: 21300076
+      Dog_BlackWhiteSpots_96: 21300192
+      Dog_BlackWhiteSpots_50: 21300100
+      Dog_BlackWhiteSpots_23: 21300046
+      Dog_BlackWhiteSpots_31: 21300062
+      Dog_BlackWhiteSpots_56: 21300112
+      Dog_BlackWhiteSpots_2: 21300004
+      Dog_BlackWhiteSpots_39: 21300078
+      Dog_BlackWhiteSpots_55: 21300110
+      Dog_BlackWhiteSpots_87: 21300174
+      Dog_BlackWhiteSpots_52: 21300104
+      Dog_BlackWhiteSpots_88: 21300176
+      Dog_BlackWhiteSpots_90: 21300180
+      Dog_BlackWhiteSpots_37: 21300074
+      Dog_BlackWhiteSpots_5: 21300010
+      Dog_BlackWhiteSpots_34: 21300068
+      Dog_BlackWhiteSpots_69: 21300138
+      Dog_BlackWhiteSpots_66: 21300132
+      Dog_BlackWhiteSpots_28: 21300056
+      Dog_BlackWhiteSpots_86: 21300172
+      Dog_BlackWhiteSpots_82: 21300164
+      Dog_BlackWhiteSpots_75: 21300150
+      Dog_BlackWhiteSpots_10: 21300020
+      Dog_BlackWhiteSpots_93: 21300186
+      Dog_BlackWhiteSpots_19: 21300038
+      Dog_BlackWhiteSpots_60: 21300120
+      Dog_BlackWhiteSpots_11: 21300022
+      Dog_BlackWhiteSpots_48: 21300096
+      Dog_BlackWhiteSpots_83: 21300166
+      Dog_BlackWhiteSpots_58: 21300116
+      Dog_BlackWhiteSpots_61: 21300122
+      Dog_BlackWhiteSpots_32: 21300064
+      Dog_BlackWhiteSpots_41: 21300082
+      Dog_BlackWhiteSpots_8: 21300016
+      Dog_BlackWhiteSpots_76: 21300152
+      Dog_BlackWhiteSpots_6: 21300012
+      Dog_BlackWhiteSpots_17: 21300034
+      Dog_BlackWhiteSpots_65: 21300130
+      Dog_BlackWhiteSpots_94: 21300188
+      Dog_BlackWhiteSpots_47: 21300094
+      Dog_BlackWhiteSpots_18: 21300036
+      Dog_BlackWhiteSpots_33: 21300066
+      Dog_BlackWhiteSpots_44: 21300088
+      Dog_BlackWhiteSpots_91: 21300182
+      Dog_BlackWhiteSpots_72: 21300144
+      Dog_BlackWhiteSpots_25: 21300050
+      Dog_BlackWhiteSpots_68: 21300136
+      Dog_BlackWhiteSpots_95: 21300190
+      Dog_BlackWhiteSpots_92: 21300184
+      Dog_BlackWhiteSpots_36: 21300072
+      Dog_BlackWhiteSpots_9: 21300018
+      Dog_BlackWhiteSpots_43: 21300086
+      Dog_BlackWhiteSpots_30: 21300060
+      Dog_BlackWhiteSpots_45: 21300090
+      Dog_BlackWhiteSpots_78: 21300156
+      Dog_BlackWhiteSpots_3: 21300006
+      Dog_BlackWhiteSpots_67: 21300134
+      Dog_BlackWhiteSpots_22: 21300044
+      Dog_BlackWhiteSpots_46: 21300092
+      Dog_BlackWhiteSpots_4: 21300008
+      Dog_BlackWhiteSpots_40: 21300080
+      Dog_BlackWhiteSpots_24: 21300048
+      Dog_BlackWhiteSpots_54: 21300108
+      Dog_BlackWhiteSpots_13: 21300026
+      Dog_BlackWhiteSpots_29: 21300058
+      Dog_BlackWhiteSpots_35: 21300070
+      Dog_BlackWhiteSpots_59: 21300118
+      Dog_BlackWhiteSpots_27: 21300054
+      Dog_BlackWhiteSpots_26: 21300052
+      Dog_BlackWhiteSpots_20: 21300040
+      Dog_BlackWhiteSpots_73: 21300146
+      Dog_BlackWhiteSpots_80: 21300160
+      Dog_BlackWhiteSpots_49: 21300098
+      Dog_BlackWhiteSpots_81: 21300162
+      Dog_BlackWhiteSpots_74: 21300148
+      Dog_BlackWhiteSpots_63: 21300126
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
