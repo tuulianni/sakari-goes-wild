@@ -448,15 +448,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 938180877}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: LoadGame
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 9
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Instructors
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &631182074
@@ -582,15 +582,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 938180877}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: LoadGame
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Story-of-Sakari
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &831603567
@@ -868,10 +868,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 938180872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de93fe3ddfa805f4c9b418f7a0e024dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d1ade8186cf58543bdc53c66f22676d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelId: 0
+  sceneName: 
+  delayTime: 5
 --- !u!1 &1178522875
 GameObject:
   m_ObjectHideFlags: 0

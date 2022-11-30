@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SurnuPekka : MonoBehaviour
 {
 		//public GameObject hello;
 		public GameObject conversation;
+
+		//tässä väliaikaisesti tämä
+		public TextMeshProUGUI sweaterAmount;
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +18,8 @@ public class SurnuPekka : MonoBehaviour
 
 			//hello.SetActive(false);
 			conversation.SetActive(false);
+
+			sweaterAmount.text = (GameManager.sweatersFound).ToString();
         
     }
 

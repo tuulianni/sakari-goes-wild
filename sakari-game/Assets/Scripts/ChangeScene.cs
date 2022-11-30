@@ -3,12 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-
 public class ChangeScene : MonoBehaviour
 {
+		//change scene with scenename
+		public string sceneName;
+
+		public void LoadGame(string sceneName)
+		{
+			//load the game scene
+			SceneManager.LoadScene(sceneName); 
+		}
+
 	
-	public float delayTime = 5f;
+		//change scene with gameObject.tag
+
+		public float delayTime = 5f;
     // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D collision) 
     {
@@ -40,17 +49,10 @@ public class ChangeScene : MonoBehaviour
 			// } 
 			else if(collision.gameObject.tag == "Finish") {
 
-				Invoke("DelayedAction", delayTime);
+				GameManager.SweaterCounter();
+				SceneManager.LoadScene("back-to-ow");
 				
 				
 			}
-
-
-    }
-
-	void DelayedAction(){
-		SceneManager.LoadScene("back-to-ow");
-	}
-
-
+		}
 }

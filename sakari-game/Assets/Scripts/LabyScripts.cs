@@ -69,8 +69,7 @@ public class LabyScripts : MonoBehaviour
 
 			if(collision.gameObject.tag == "stairs") {
 
-				//winner = FindObjectOfType<TextMeshProUGUI>();
-				//winner.text = "HIHI PELASTIT VILLAPAIDAT";
+				GameManager.SweaterCounter();
 				SceneManager.LoadScene("back-to-Sakarihouse");
 				
 			}
