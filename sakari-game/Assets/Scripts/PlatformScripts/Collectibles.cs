@@ -15,6 +15,9 @@ public class Collectibles : MonoBehaviour
             {
                 Destroy(collision.gameObject);
                 bottles++;
+
+                //laita tämä rivi niihin villapaitoihin
+                GameManager.SweaterCounter();
                 bottlesText.text = "Bottles: " + bottles;
             }
     }
