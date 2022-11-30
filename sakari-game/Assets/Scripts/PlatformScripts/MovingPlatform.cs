@@ -28,6 +28,7 @@ public class MovingPlatform : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.transform.SetParent(transform);
+            // collision.transform.position.x = transform.position.x;
         }
     }
 
