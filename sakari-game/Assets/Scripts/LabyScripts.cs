@@ -48,8 +48,15 @@ public class LabyScripts : MonoBehaviour
 
 		//tämä on valmis luokka ja tätä tulee käyttää
 		private void OnCollisionEnter2D(Collision2D collision) {
+
+					if(collision.gameObject.tag == "Dog") {
+
+					Destroy(collision.gameObject);
+
+					GameManager.SweaterCounter();
+					}
 			
-				//villapaita häviää kun siihen koskee
+				//lankarulla (sweaters siksi kun ennen oli villapaita) häviää kun siihen koskee
 				//pisteet kasvaa kun siihen koskee
 				if(collision.gameObject.tag == "sweaters") {
 
@@ -59,10 +66,10 @@ public class LabyScripts : MonoBehaviour
 
 					//keyAmount = FindObjectOfType<TextMeshProUGUI>();
 					if (score < sweaters) {
-						keyAmount.text = "Pisteitä: " + score;
+						keyAmount.text = "Rullia kerätty: " + score;
 					}
 					else {
-						keyAmount.text = "Huh! Äkkiä turvaan ylös";
+						keyAmount.text = "Kaikki rullat kerätty!";
 					}
 
 				}
