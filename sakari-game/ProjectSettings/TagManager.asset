@@ -31,7 +31,6 @@ TagManager:
   - Rex
   - conversation
   - risti
-  - audio
   layers:
   - Default
   - TransparentFX

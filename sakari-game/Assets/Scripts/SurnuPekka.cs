@@ -16,6 +16,7 @@ public class SurnuPekka : MonoBehaviour
     void Start()
     {
 
+
 			//hello.SetActive(false);
 			conversation.SetActive(false);
 
