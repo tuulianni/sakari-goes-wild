@@ -12,9 +12,12 @@ public class ScoreSystem : MonoBehaviour
     public GameObject timeLeftUI;
     public GameObject playerScoreUI;
 
+    [SerializeField] private AudioClip Villis;
+
     
-    void Update()
-    {
+    void Update(){
+
+        
         timeLeft-= Time.deltaTime;
         timeLeftUI.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = ("Time: " + (int)timeLeft);
         playerScoreUI.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = ("Score: " + playerScore);
@@ -25,15 +28,41 @@ public class ScoreSystem : MonoBehaviour
         }
     }
 
+    void Start(){
+      //  Villis = GetComponent<AudioSource>();
+    }
+
     void CountScore(){
         playerScore = playerScore + (int)(timeLeft * 10);
         Debug.Log (playerScore);
     }
+    void OnCollisionEnter2D (Collision2D colt){
+       // Debug.Log("Player has collited with " + col.collider.name);
+        if(colt.gameObject.tag == "audio"){
+          
+          SoundManager.instance.PlaySound(Villis);
+        }
+        
+    }
     void OnTriggerEnter2D (Collider2D trig){
         if (trig.gameObject.tag == "Finish"){
+        
         Debug.Log("End of Level");
         CountScore();
         }
+        // }if(trig.gameObject.tag == "audio"){
+            
+        //     Villis.Play();
+        // }
+        
+        if(trig.gameObject.tag == "sweaters"){
+
+						GameManager.SweaterCounter();            
+            playerScore += 10;
+            Destroy(trig.gameObject);
+            
+        }
+        
     }
 
     

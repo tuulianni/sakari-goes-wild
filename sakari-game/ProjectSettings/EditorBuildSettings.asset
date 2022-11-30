@@ -6,11 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Swagge..unity
+    guid: 2861efa34039770498ed329709171d5b
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: e1c9b5d98415ac34bb493d3c961dcb63
   - enabled: 1
+    path: Assets/Scenes/Story-of-Sakari.unity
+    guid: d693988d9cf4c1f49b00bf9bb1aed5a6
+  - enabled: 1
     path: Assets/Scenes/Overworld.unity
     guid: e1d0ecac3f8994d438b0d68e7773e1e8
+  - enabled: 1
+    path: Assets/Scenes/back-to-ow.unity
+    guid: d10e9850abb4a8b499798f15b94278db
+  - enabled: 1
+    path: Assets/Scenes/RexInfo.unity
+    guid: 9e92db1d82310f444bd48e9610e5a821
+  - enabled: 1
+    path: Assets/Scenes/Rex.unity
+    guid: cec699bd9381a414f85c633d6b305d26
+  - enabled: 1
+    path: Assets/Scenes/HouseSakari.unity
+    guid: 4ed4375221f202f419f6cec5d4ebd89f
   - enabled: 1
     path: Assets/Scenes/Labyrintti.unity
     guid: a05f02287418c1e48b14b42db17f0ee1
@@ -18,15 +36,21 @@ EditorBuildSettings:
     path: Assets/Scenes/back-to-Sakarihouse.unity
     guid: 245d9d23513542e4bb23098a4b216fa3
   - enabled: 1
-    path: Assets/Scenes/HouseSakari.unity
-    guid: 4ed4375221f202f419f6cec5d4ebd89f
-  - enabled: 1
     path: Assets/Scenes/HouseEki.unity
     guid: a2d7aebce9c9214478133260f92b026a
   - enabled: 1
-    path: Assets/Scenes/back-to-ow.unity
-    guid: d10e9850abb4a8b499798f15b94278db
-  - enabled: 1
     path: Assets/Scenes/to-SakaHous.unity
     guid: e5caf1dfd0b022e45b13928d346d04dd
+  - enabled: 1
+    path: Assets/Scenes/Instructors.unity
+    guid: b75975e65a5582b4486c53656ee4219a
+  - enabled: 1
+    path: Assets/Scenes/MGPlatformer.unity
+    guid: c0e889e92d4bf8943a49331118e2cd0e
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: 67c269370566f48498e6391c30407d4a
+  - enabled: 1
+    path: Assets/Scenes/Rex.unity
+    guid: cec699bd9381a414f85c633d6b305d26
   m_configObjects: {}

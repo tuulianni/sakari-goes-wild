@@ -5,21 +5,32 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private float moveDirection;
-    public float moveSpeed = 10;
+    public float moveSpeed = 8;
     public float jumpForce = 1250;
     public bool isGrounded;
     private bool facingRight = true;
     public int MaxJumpCount = 2;
+    float speed = 0f;
+
+    AudioSource jumpsound;
+
+    public Animator animator;
     
     void Update(){
     
         PlayerMove();
     }
 
+    void Start(){
+        jumpsound = GetComponent<AudioSource>();
+    }
+
     void PlayerMove(){
         //Controlls
         moveDirection = Input.GetAxis("Horizontal");
-        if(Input.GetButtonDown("Jump2") && MaxJumpCount > 0)
+        speed = moveDirection * moveSpeed;
+        animator.SetFloat("Speed", Mathf.Abs(speed));
+        if(Input.GetButtonDown("Jump") && MaxJumpCount > 0)
         {
             //MaxJumpCount--;
             Jump();
@@ -38,6 +49,8 @@ public class Movement : MonoBehaviour
     }
 
     void Jump(){
+
+        jumpsound.Play();
         GetComponent<Rigidbody2D>().AddForce (Vector2.up * jumpForce);
         isGrounded = false;
         MaxJumpCount--;
@@ -56,6 +69,7 @@ public class Movement : MonoBehaviour
             isGrounded = true;
             MaxJumpCount = 2;
         }
+        
     }
 
 

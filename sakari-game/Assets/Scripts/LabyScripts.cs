@@ -17,11 +17,12 @@ public class LabyScripts : MonoBehaviour
 
 	
 		public GameObject stairs;
+		public GameObject info;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        info.SetActive(true);
     }
 
     // Update is called once per frame
@@ -36,6 +37,14 @@ public class LabyScripts : MonoBehaviour
 					stairs.SetActive(false);
 				}
     }
+
+		public void CloseInfo() {
+			info.SetActive(false);
+		}
+
+		public void OpenInfo() {
+			info.SetActive(true);
+		}
 
 		//tämä on valmis luokka ja tätä tulee käyttää
 		private void OnCollisionEnter2D(Collision2D collision) {
@@ -60,8 +69,7 @@ public class LabyScripts : MonoBehaviour
 
 			if(collision.gameObject.tag == "stairs") {
 
-				//winner = FindObjectOfType<TextMeshProUGUI>();
-				//winner.text = "HIHI PELASTIT VILLAPAIDAT";
+				GameManager.SweaterCounter();
 				SceneManager.LoadScene("back-to-Sakarihouse");
 				
 			}
@@ -70,7 +78,7 @@ public class LabyScripts : MonoBehaviour
 				//palaa siis aina alkuun jos osuu viholliseen
 				if(collision.gameObject.tag == "enemies") {
 
-					SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+					SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
 					
 				}
 

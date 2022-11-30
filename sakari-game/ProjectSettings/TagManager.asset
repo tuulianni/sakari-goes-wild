@@ -28,8 +28,10 @@ TagManager:
   - Rock
   - Fence
   - Trigger
-  - FallDetector
-  - Bottle
+  - Rex
+  - conversation
+  - risti
+  - audio
   layers:
   - Default
   - TransparentFX
@@ -84,4 +86,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 4195696007
+    locked: 0
+  - name: frontOfPlayer
+    uniqueID: 3595203817
     locked: 0

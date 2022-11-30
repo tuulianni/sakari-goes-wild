@@ -1,15 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class SurnuPekka : MonoBehaviour
 {
-		public GameObject hello;
+		//public GameObject hello;
+		public GameObject conversation;
+
+		//tässä väliaikaisesti tämä
+		public TextMeshProUGUI sweaterAmount;
+
     // Start is called before the first frame update
     void Start()
     {
 
-			hello.SetActive(false);
+			//hello.SetActive(false);
+			conversation.SetActive(false);
+
+			sweaterAmount.text = (GameManager.sweatersFound).ToString();
         
     }
 
@@ -17,8 +27,16 @@ public class SurnuPekka : MonoBehaviour
     {
       if(collision.gameObject.tag == "PekkaHouse") {
 
-				hello.SetActive(true);
+				//	hello.SetActive(true);
+
+				StartCoroutine(waiter());
 
 			}
 		}
+
+		 IEnumerator waiter() 
+		 {
+		 	yield return new WaitForSeconds(5);
+		 	conversation.SetActive(true);
+		 }
 }
