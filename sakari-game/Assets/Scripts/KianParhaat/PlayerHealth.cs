@@ -26,7 +26,6 @@ public class PlayerHealth : MonoBehaviour
             Die();
         }
         if (hasDied == true) {
-					GameManager.count = 0;
             StartCoroutine ("Die");
         }
     }
