@@ -916,7 +916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 3
   movement: {x: 0, y: 0}
-  rigidbody: {fileID: 0}
+  rigidbody: {fileID: 133608624}
   anim: {fileID: 0}
   hf: 0
   vf: 0
