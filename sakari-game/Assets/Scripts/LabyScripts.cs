@@ -85,6 +85,7 @@ public class LabyScripts : MonoBehaviour
 				//palaa siis aina alkuun jos osuu viholliseen
 				if(collision.gameObject.tag == "enemies") {
 
+					GameManager.count = 0;
 					SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
 					
 				}
