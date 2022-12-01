@@ -4830,7 +4830,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6611,9 +6611,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "K\xF6hk\xF6h t\xE4t\xE4 p\xF6lyn m\xE4\xE4r\xE4\xE4, Sakarin kellari onkin
-    aikamoisten koiperhosm\xE4\xE4rien valloittama ja melkoinen labyrintti!\nMutta
-    apua! Kellarissa on my\xF6s s\xE4il\xF6tty Sakarin villapaitoja!\n\nKer\xE4\xE4
-    \xE4kki\xE4 kaikki villapaidat turvaan, mutta varo verenhimoisia koiperhosia.\n"
+    aikamoisten koiperhosm\xE4\xE4rien valloittama ja melkoinen labyrintti!\r\n\r\nMutta
+    apua! \r\nVillapaitoihin tarkoitetut langat on s\xE4il\xF6tty kellariin!\r\n\r\nMets\xE4st\xE4
+    kaikki lankaker\xE4t itsellesi ja juokse sitten \xE4kki\xE4 portaisiin. Varo
+    kuitenkin osumasta perhosiin, sill\xE4 silloin joudut aloittamaan kaiken alusta!
+    \r\n\r\nps. Saattaa kellarissa olla villapaitojakin!\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -6622,7 +6624,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6640,13 +6642,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
