@@ -2,30 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = System.Random;
 
 public class ChangeScene : MonoBehaviour
 {
-		//change scene with scenename
-		public string sceneName;
-		public AudioSource hihi;
+    //change scene with scenename
+    public string sceneName;
+    public AudioSource hihi1;
+    public AudioSource hihi2;
+    public AudioSource hihi3;
+    private AudioSource[] _audioSources = new AudioSource[3];
+    private readonly Random _gen = new();
 
-		public void testi() {
-
-		}
-
-		public void LoadGame(string sceneName)
-		{
-		
-				hihi.Play();
-				StartCoroutine(waiter(sceneName));
-			 
-		}
-
+    public void LoadGame(string sceneName)
+    {    
+        _audioSources[0] = hihi1;
+        _audioSources[1] = hihi2;
+        _audioSources[2] = hihi3;
+        var hihiNumber = _gen.Next(0, 3);
+        _audioSources[hihiNumber].Play();
+        StartCoroutine(waiter(sceneName));
+    }
 		
 		IEnumerator waiter(string sceneName) {
-			yield return new WaitForSeconds(0.3f);
+			yield return new WaitForSeconds(0.5f);
 
 			//load the game scene
+			SceneManager.LoadScene(sceneName);
+		}
+
+		public void Change(string sceneName) {
 			SceneManager.LoadScene(sceneName);
 		}
 
