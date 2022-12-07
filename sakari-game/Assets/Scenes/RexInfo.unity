@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1875371067}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: LoadGame
+        m_MethodName: Change
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -965,4 +965,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 
-  hihi: {fileID: 0}
+  hihi1: {fileID: 0}
+  hihi2: {fileID: 0}
+  hihi3: {fileID: 0}
