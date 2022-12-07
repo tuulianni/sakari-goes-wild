@@ -32,6 +32,9 @@ TagManager:
   - conversation
   - risti
   - audio
+  - Bottle
+  - FallDetector
+  - Flag
   layers:
   - Default
   - TransparentFX
