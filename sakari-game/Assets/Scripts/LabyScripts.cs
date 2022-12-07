@@ -18,11 +18,17 @@ public class LabyScripts : MonoBehaviour
 	
 		public GameObject stairs;
 		public GameObject info;
+		public GameObject hit;
+
+		public AudioSource stairsSound;
+		public AudioSource enemyHit;
+		public AudioSource yarnCollect;
 
     // Start is called before the first frame update
     void Start()
     {
         info.SetActive(true);
+				hit.SetActive(false);
     }
 
     // Update is called once per frame
@@ -66,9 +72,11 @@ public class LabyScripts : MonoBehaviour
 
 					//keyAmount = FindObjectOfType<TextMeshProUGUI>();
 					if (score < sweaters) {
+						yarnCollect.Play();
 						keyAmount.text = "Rullia kerätty: " + score;
 					}
 					else {
+						stairsSound.Play();
 						keyAmount.text = "Kaikki rullat kerätty!";
 					}
 
@@ -85,10 +93,19 @@ public class LabyScripts : MonoBehaviour
 				//palaa siis aina alkuun jos osuu viholliseen
 				if(collision.gameObject.tag == "enemies") {
 
+					enemyHit.Play();
 					GameManager.count = 0;
-					SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
+					hit.SetActive(true);
+
+					Invoke("Action", 1.2f);			
 					
 				}
+
+		}
+
+		public void Action() {
+
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);	
 
 		}
 
