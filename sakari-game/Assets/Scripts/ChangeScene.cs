@@ -7,17 +7,32 @@ public class ChangeScene : MonoBehaviour
 {
 		//change scene with scenename
 		public string sceneName;
+		public AudioSource hihi;
+
+		public void testi() {
+
+		}
 
 		public void LoadGame(string sceneName)
 		{
+		
+				hihi.Play();
+				StartCoroutine(waiter(sceneName));
+			 
+		}
+
+		
+		IEnumerator waiter(string sceneName) {
+			yield return new WaitForSeconds(0.3f);
+
 			//load the game scene
-			SceneManager.LoadScene(sceneName); 
+			SceneManager.LoadScene(sceneName);
 		}
 
 	
 		//change scene with gameObject.tag
 
-		public float delayTime = 5f;
+		
     // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D collision) 
     {
