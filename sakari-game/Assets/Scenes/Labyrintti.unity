@@ -977,7 +977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133608619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.55, y: -3.83, z: 0}
+  m_LocalPosition: {x: -0.65, y: -0.44, z: 0}
   m_LocalScale: {x: 0.52, y: 0.52, z: 1.5294117}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  sweaters: 2
+  sweaters: 8
   keyAmount: {fileID: 26525688}
   winner: {fileID: 1706034173}
   stairs: {fileID: 2104434733}
@@ -5083,7 +5083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5595846175644865144, guid: 08ba7931a27a6fc408c438cc83b4df53, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadGame
+      value: Change
       objectReference: {fileID: 0}
     - target: {fileID: 5595846175644865144, guid: 08ba7931a27a6fc408c438cc83b4df53, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

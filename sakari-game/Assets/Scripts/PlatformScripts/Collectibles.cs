@@ -34,7 +34,7 @@ private void OnTriggerEnter2D(Collider2D collision)
                 Destroy(collision.gameObject);
                 bottles++;
                 
-                bottlesText.text = "Bottles: " + bottles;
+                bottlesText.text = "Pulloja: " + bottles;
             }
         if (collision.gameObject.CompareTag("sweaters"))
             {
@@ -47,7 +47,8 @@ private void OnTriggerEnter2D(Collider2D collision)
 
         if (collision.gameObject.CompareTag("Flag"))
             {
-                SceneManager.LoadScene("Overworld");
+								GameManager.SweaterCounter();
+                SceneManager.LoadScene("pf-to-ow");
             }
     }
 }

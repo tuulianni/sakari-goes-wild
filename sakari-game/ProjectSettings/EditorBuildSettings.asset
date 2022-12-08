@@ -53,4 +53,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rex.unity
     guid: cec699bd9381a414f85c633d6b305d26
+  - enabled: 1
+    path: Assets/Scenes/pf-to-ow.unity
+    guid: dbc5fae979823964cb046f9d4718c8ea
+  - enabled: 1
+    path: Assets/Scenes/PFinfo.unity
+    guid: 8d1a91e89a06c9f44a589bd765b4bd6f
   m_configObjects: {}

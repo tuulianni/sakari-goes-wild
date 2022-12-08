@@ -110,6 +110,7 @@ public class PFMovement : MonoBehaviour
     {
         if(other.tag == "FallDetector")
         {
+						GameManager.count = 0;
             transform.position = respawnPoint;
         }
     }
