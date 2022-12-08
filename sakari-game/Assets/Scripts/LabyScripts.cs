@@ -18,11 +18,17 @@ public class LabyScripts : MonoBehaviour
 	
 		public GameObject stairs;
 		public GameObject info;
+		public GameObject hit;
+
+		public AudioSource stairsSound;
+		public AudioSource enemyHit;
+		public AudioSource yarnCollect;
 
     // Start is called before the first frame update
     void Start()
     {
         info.SetActive(true);
+				hit.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,8 +54,15 @@ public class LabyScripts : MonoBehaviour
 
 		//tämä on valmis luokka ja tätä tulee käyttää
 		private void OnCollisionEnter2D(Collision2D collision) {
+
+					if(collision.gameObject.tag == "Dog") {
+
+					Destroy(collision.gameObject);
+
+					GameManager.SweaterCounter();
+					}
 			
-				//villapaita häviää kun siihen koskee
+				//lankarulla (sweaters siksi kun ennen oli villapaita) häviää kun siihen koskee
 				//pisteet kasvaa kun siihen koskee
 				if(collision.gameObject.tag == "sweaters") {
 
@@ -59,10 +72,12 @@ public class LabyScripts : MonoBehaviour
 
 					//keyAmount = FindObjectOfType<TextMeshProUGUI>();
 					if (score < sweaters) {
-						keyAmount.text = "Pisteitä: " + score;
+						yarnCollect.Play();
+						keyAmount.text = "Rullia kerätty: " + score;
 					}
 					else {
-						keyAmount.text = "Huh! Äkkiä turvaan ylös";
+						stairsSound.Play();
+						keyAmount.text = "Kaikki rullat kerätty!";
 					}
 
 				}
@@ -78,9 +93,19 @@ public class LabyScripts : MonoBehaviour
 				//palaa siis aina alkuun jos osuu viholliseen
 				if(collision.gameObject.tag == "enemies") {
 
-					SceneManager.LoadScene(SceneManager.GetActiveScene().name);				
+					enemyHit.Play();
+					GameManager.count = 0;
+					hit.SetActive(true);
+
+					Invoke("Action", 1.2f);			
 					
 				}
+
+		}
+
+		public void Action() {
+
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);	
 
 		}
 

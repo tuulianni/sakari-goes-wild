@@ -31,10 +31,6 @@ TagManager:
   - Rex
   - conversation
   - risti
-  - audio
-  - Bottle
-  - FallDetector
-  - Flag
   layers:
   - Default
   - TransparentFX
