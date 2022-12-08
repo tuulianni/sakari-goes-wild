@@ -26,6 +26,8 @@ public class PFMovement : MonoBehaviour
     private Vector3 respawnPoint;
     public GameObject fallDetector;
 
+    [SerializeField] private AudioSource jumpSoundEffect;
+
     private void Awake() 
     {
         body = GetComponent<Rigidbody2D>();
@@ -38,6 +40,8 @@ public class PFMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
+        
+
 
         //Flip player when moving
         if (horizontalInput > 0.01f)
@@ -48,9 +52,11 @@ public class PFMovement : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.Space))
             Jump();
+            
 
         if(Input.GetKeyUp(KeyCode.Space) && body.velocity.y > 0)
             body.velocity = new Vector2(body.velocity.x, body.velocity.y / 2);
+            
 
         if (onWall())
         {
@@ -111,6 +117,8 @@ public class PFMovement : MonoBehaviour
     private void Jump()
     {
 
+        jumpSoundEffect.Play();
+
         if(coyoteCounter <= 0 && !onWall() && jumpCounter <= 0) return;
 
         if(onWall())
@@ -118,7 +126,11 @@ public class PFMovement : MonoBehaviour
         else
         {
             if(isGrounded())
+
+                
                 body.velocity = new Vector2(body.velocity.x, jumoPower);
+                
+
             else
             {
                 if (coyoteCounter > 0)
@@ -127,6 +139,7 @@ public class PFMovement : MonoBehaviour
                 {
                     if(jumpCounter > 0)
                     {
+                        
                         body.velocity = new Vector2(body.velocity.x, jumoPower);
                         jumpCounter--;
                     }
