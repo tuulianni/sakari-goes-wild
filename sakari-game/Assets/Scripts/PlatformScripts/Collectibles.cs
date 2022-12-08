@@ -13,10 +13,12 @@ public class Collectibles : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI bottlesText;
 
+    [SerializeField] private AudioSource collectSoundEffect;
+
 
 void Update()
 {
-    if(bottles == 1) {
+    if(bottles == 5) {
         Flag.SetActive(true);
     } 
     else {
@@ -28,6 +30,7 @@ private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Bottle"))
             {
+                collectSoundEffect.Play();
                 Destroy(collision.gameObject);
                 bottles++;
                 
