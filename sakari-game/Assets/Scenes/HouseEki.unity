@@ -567,7 +567,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1711887060}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: LoadGame
+        m_MethodName: Change
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -828,7 +828,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 
-  delayTime: 5
+  hihi1: {fileID: 0}
+  hihi2: {fileID: 0}
+  hihi3: {fileID: 0}
 --- !u!1 &1876196168
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,14 +917,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1711887060}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: LoadGame
+        m_MethodName: Change
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 9
           m_FloatArgument: 0
-          m_StringArgument: MGPlatformer
+          m_StringArgument: PFinfo
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1876196171
